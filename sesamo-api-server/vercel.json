@@ -1,0 +1,3 @@
+{
+  "note": "Vercel non supporta server Express nativi. Usa Render o Railway per 'sesamo-api-server'."
+}
