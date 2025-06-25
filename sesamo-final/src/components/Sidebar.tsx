@@ -25,9 +25,9 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-64 h-screen bg-gray-800 text-white flex flex-col">
+    <div className="w-64 h-screen bg-blue-300 text-white flex flex-col">
       <div className="p-4 border-b border-gray-700 text-center">
-        <img src="/logo.png" className="h-10 mx-auto" alt="Sesamo Logo" />
+        <img src="/logo.png" className="h-48 mx-auto" alt="Sesamo Logo" />
       </div>
 
       <nav className="flex-1 px-4 py-6 space-y-2">
@@ -47,7 +47,7 @@ export default function Sidebar() {
       <div className="px-4 py-4 border-t border-gray-700">
         <button
           onClick={handleLogout}
-          className="w-full flex items-center gap-2 px-4 py-2 rounded-md text-left text-red-400 hover:bg-gray-700"
+          className="w-full flex items-center gap-2 px-4 py-2 rounded-md text-left text-red-700 hover:bg-gray-400"
         >
           <span>🚪</span>
           <span>Logout</span>

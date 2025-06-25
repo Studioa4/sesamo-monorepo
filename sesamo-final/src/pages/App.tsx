@@ -10,6 +10,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ProtectedRoute from "../components/ProtectedRoute";
 import Login from "./Login";
+import RecuperaPassword from "./RecuperaPassword";
+import CambiaPassword from "./CambiaPassword";
 
 // Layout con sidebar
 const Layout = ({ children }) => (
@@ -46,7 +48,9 @@ export default function App() {
             </ProtectedRoute>
           }
         />
-
+        <Route path="/recupera-password" element={<RecuperaPassword />} />
+        <Route path="/cambia-password" element={<CambiaPassword />} />
+        
         <Route
           path="/stabili"
           element={<ProtectedRoute><Layout><Stabili /></Layout></ProtectedRoute>}

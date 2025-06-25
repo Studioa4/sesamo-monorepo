@@ -46,8 +46,8 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
         <div className="mb-4 text-center">
-          <img src="/logo.png" className="h-12 mx-auto mb-2" />
-          <h1 className="text-xl font-bold">Login a Sesamo</h1>
+          <img src="/logo.png" className="h-72 mx-auto mb-4" />
+          <h1 className="text-xl font-bold">Login</h1>
         </div>
         <input
           type="email"
@@ -72,6 +72,11 @@ export default function Login() {
         >
           {loading ? "Accesso in corso..." : "Login"}
         </button>
+        <div className="text-center mt-4">
+          <a href="/recupera-password" className="text-blue-600 hover:underline text-sm">
+            Hai dimenticato la password?
+          </a>
+        </div>
       </div>
     </div>
   );
