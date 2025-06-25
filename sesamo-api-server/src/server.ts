@@ -16,6 +16,10 @@ app.use('/api/utenti', utentiRouter);
 app.use("/api", resetPasswordRouter);
 app.use(autorizzazioniRouter);
 
+app.get("/", (_req, res) => {
+  res.send("API attiva 🚀");
+});
+
 app.listen(4000, () => {
   console.log("✅ API server avviato su http://localhost:4000");
 });

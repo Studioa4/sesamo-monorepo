@@ -18,6 +18,9 @@ app.use(open_varco_1.default);
 app.use('/api/utenti', utenti_1.default);
 app.use("/api", invia_mail_reset_1.default);
 app.use(autorizzazioni_1.default);
+app.get("/", (_req, res) => {
+    res.send("API attiva 🚀");
+});
 app.listen(4000, () => {
     console.log("✅ API server avviato su http://localhost:4000");
 });
